@@ -1,0 +1,64 @@
+<!-- Rodrigo C. Baltazar -->
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="author" content="Rodrigo CavanhaMan">
+	<title>Gibiteca do Cavanha - Tela de Consulta de Gibis, HQs, Mangás e outros.</title>
+	<link rel="icon" href="img\book.png">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css\Gibiteca.css">
+	<link rel="stylesheet" type="text/css" href="css\jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css\tooltipui.css">
+	<script src="js\jquery-3.1.0.js"></script>
+	<script src="js\jquery.mask.js"></script>
+	<script src="js\Gibiteca.js"></script>
+	<script src="js\jquery-ui.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+	<BR>
+	<header id="iftm">
+		<img class="imgCapa" src="img\vintage.png" alt="bibiteca1">
+		<h1>Gibiteca do Cavanha</h1>
+		<p>Sistema desenvolvido para consulta à coleção de Gibis, HQs, Mangás, Graphic Novels e Livros do CavanhaMan!</p>
+	</header>
+	<section>
+	  <form>
+		<label for="txtHeroi"><strong>Herói(s):</strong></label>
+		<input type="text" id="txtHeroi" placeholder="Ex.: Batman, Superman, Homem Aranha, ..." title="Digite o nome do(s) personagem(ns) principal(is) separados por vírgulas">
+		<BR>
+		<label for="txtAssunto"><strong>Assunto(s):</strong></label>
+		<input type="text" id="txtAssunto" placeholder="Ex.: Guerra infinita..." title="Digite o assunto que voce procura">
+		<BR>		
+		<details>
+			<summary>Para mais opções de pesquisa, clique aqui</summary>
+			<label for="txtIsbn"><strong>ISBN:</strong></label>
+			<input type="text" id="txtIsbn" placeholder="Ex.: 978-3-642-11746-6" title="Digite o ISBN da publicação. Exemplo: 978-3-642-11746-6">
+			<label for="txtTitulo"><strong>Título(s):</strong></label>
+			<input type="text" id="txtTitulo" placeholder="Ex.: O Hobbit" title="Digite o título da publicação">
+			<label for="txtAutor"><strong>Autor(es):</strong></label>
+			<input type="text" id="txtAutor" placeholder="Ex.: Tolkien, Conan Doyle..." title="Digite o nome do(s) autor(es) separados por vírgulas">
+			<label for="txtDesenhista"><strong>Desenhista(s):</strong></label>
+			<input type="text" id="txtDesenhista" placeholder="Ex.: Norm Breyfogle..." title="Digite o nome do(s) desenhista(s) separados por vírgulas">
+		</details>
+		<BR>
+		<div id="myProgress"><div id="myBar" class="progress-bar progress-bar-striped active"></div></div>
+		<BR>
+		<div class="botoes">
+			<button type="button" accesskey="P" id="btnPesquisar" class="visivel" onclick="pesquisarRef()" title="Procurar pelos itens digitados no formulário"><i class="fa fa-search"></i> <u>P</u>esquisar</button>
+			<button type="button" accesskey="C" id="btnCancelar" class="invisivel" onclick="cancelarRef()" title="Cancela a pesquisa atual"><i class="fa fa-hand-stop-o"></i> <u>C</u>ancelar</button>
+			<button type="reset"  accesskey="L" title="Limpa todos os campos de pesquisa"><i class="fa fa-close"></i> <u>L</u>impar</button>
+			<button type="button" id="button" accesskey="A" title="Dicas para usar este programa" onclick="ajuda()"><i class="fa fa-question-circle-o"></i> <u>A</u>juda</button>
+			<BR><BR><BR>
+			 <!--button type="button" id="button" accesskey="A"><i class="fa fa-question-circle-o"></i> <u>A</u>juda</button-->
+
+		</div> 
+	  </form>
+	</section>
+	<BR><BR>
+	<div id="dialog" class="invisivel" title="Ajuda da GIBITECA">
+	<img class="imgHelp" src="img\gibiteca5.jpg" alt="Ajuda" width="800px">
+</div>
+  </body>
+</html>
