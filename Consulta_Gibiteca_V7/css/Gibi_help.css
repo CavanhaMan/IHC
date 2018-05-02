@@ -1,0 +1,57 @@
+body{
+	font-family: sans-serif;
+	background-color: #663300;
+	background-repeat: repeat;
+	background-size:100%;
+	background-opacity: 0.2;
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+button {
+	text-align:center;
+	height: 30px;
+	width: 120px;
+	border-radius: 5px;
+	background-color: #663300;
+	font-weight: bold;
+	color: beige;
+	transition-duration: 0.4s;
+	margin-top: 20px;
+	border-radius: 15px;
+}
+#btnCancelar{
+	background-color:#b30000;
+}
+#btnCancelar:hover{
+	cursor: pointer;
+	background-color:#ff0000;
+	box-shadow: 2px 2px 2px black;
+	/*margin-top:-1px;*/
+}
+.botoes{
+	text-align:center;
+}
+
+/* ------------- RESPONSIVIDADE -------------- */
+/* SMARTPHONE */
+@media only screen and (min-width:0px) {
+	button{
+		width: 70%;
+		margin-top:5px;
+	}
+}
+
+/* TABLETS */
+@media only screen and (min-width:440px) {
+	button{
+		width: 120px;
+	}
+}
+/* DESKTOP */
+@media only screen and (min-width:750px) {
+	button{
+		width: 120px;
+	}
+}
+

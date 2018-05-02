@@ -1,0 +1,234 @@
+/*::-webkit-scrollbar { 
+	display: none; 
+}*/
+/* ------------- MENU MAIS OPÇÕES ------------ */
+summary::-webkit-details-marker {
+	display: none;
+}
+summary{
+	outline:none;
+	border:0px;
+ 	cursor: pointer;
+	color: blue;
+}
+summary:after {
+	background: #663300; 
+	border-radius: 15px; 
+	content: "+"; 
+	color: #fff; 
+	float: left; 
+	font-size: 20px; 
+	font-weight: bold; 
+	margin: -4px 1px 0 0; 
+	padding: 0; 
+	text-align: center; 
+	width: 25px;
+}
+details[open] summary:after {
+	content: "–";
+}
+details{
+	margin-top: 20px;
+}
+/* ----------- FIM MENU MAIS OPÇÕES ---------- */
+
+body{
+	font-family: sans-serif;
+	background-color: #663300;
+	background-repeat: repeat;
+	background-size:100%;
+	background-opacity: 0.2;
+
+}
+header{
+	width=10px;
+	text-align:center;
+	border-radius: 15px 15px 0px 0px;
+	background-color: #663300;
+	background-image: url("../img/fundo2.jpg");
+	padding: 15px;
+}
+header h1{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color:beige;
+	text-shadow: 2px 2px 2px black;
+	font-size: 300%;
+	margin:0px;
+}
+header p{
+	color:beige;
+	font-size:120%;
+}
+section{
+	background-color: beige;
+	border-radius: 0px 0px 15px 15px;
+	padding: 15px;
+	padding-right: 30px;
+}
+input[type="text"]{
+	width:100%;
+	height:40px;
+	padding: 8px;
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 8px;
+	outline:none;
+	font-size:120%;
+}
+button {
+	text-align:center;
+	height: 30px;
+	width: 120px;
+	border-radius: 5px;
+	background-color: #663300;
+	font-weight: bold;
+	color: beige;
+	transition-duration: 0.4s;
+	margin-top: 20px;
+	border-radius: 15px;
+}
+button:hover{
+	cursor: pointer;
+	background-color:#b35900;
+	box-shadow: 2px 2px 2px black;
+	/*margin-top:-1px;*/
+}
+.botoes{
+	text-align:center;
+}
+#btnCancelar{
+	background-color:#b30000;
+}
+#btnCancelar:hover{
+	cursor: pointer;
+	background-color:#ff0000;
+	box-shadow: 2px 2px 2px black;
+	/*margin-top:-1px;*/
+}
+label{
+	display:block;
+	font-weight:bold;
+	margin: 10px 0px 10px 0px;
+}
+.imgCapa{
+	width:200px;
+	margin-left: -10px;
+}
+u { 
+	text-decoration: underline;
+}
+/* ------------ BARRA DE PESQUISA ------------ */
+#myProgress {
+	width: 100%;
+	/*border: 1px solid black;*/
+}
+#myBar {
+	width: 0px;
+	height: 30px;
+	background-color: #663300;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	cursor: progress;
+}
+.invisivel{
+	display: none;
+}
+.visivel{
+	display: inline;
+}
+
+/* ------------- BARRA COLORIDA -------------- */
+.progress-bar-striped,.progress-striped .progress-bar{background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);-webkit-background-size:40px 40px;background-size:40px 40px}
+
+
+#dialog{
+	background-color: beige;
+	text-align: center;
+	height: auto;
+    width: 800;
+	margin:0;
+	padding:0;
+}
+
+/* ------------- RESPONSIVIDADE -------------- */
+/* SMARTPHONE */
+@media only screen and (min-width:0px) {
+	body{
+		margin:0px;
+		padding:0px;
+		border:0px;
+	}
+	header h1{
+		font-size: 300%;
+		line-height: 32px;
+	}
+	.imgCapa{
+		margin:0px;
+		float: none;
+	}
+	button{
+		width: 70%;
+		margin-top:5px;
+	}
+	header, section{
+		margin:0px;
+		border-radius: 0px;
+	}
+	header{
+		margin-top:-20px;
+	}
+	#myProgress {
+		margin-left:8px;
+	}
+}
+
+/* TABLETS */
+@media only screen and (min-width:440px) {
+	body{
+		margin:0px;
+		padding:0px;
+		border:0px;
+	}
+	header h1{
+		line-height: 100%;
+	}
+	.imgCapa{
+		margin-right:20px;
+		float:right;
+	}
+	button{
+		width: 120px;
+	}
+	header{
+		margin-top:-20px;
+	}
+	#myProgress {
+		margin-left:8px;
+	}
+}
+/* DESKTOP */
+@media only screen and (min-width:750px) {
+	body{
+		margin:50px;
+		padding:0px;
+		border:0px;
+	}
+	header h1{
+		line-height: 200%;
+	}
+	.imgCapa{
+		margin-right:20px;
+		float:right;
+	}
+	button{
+		width: 120px;
+	}
+	#myProgress {
+		margin-left:8px;
+	}
+}
+
