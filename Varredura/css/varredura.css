@@ -1,0 +1,83 @@
+body{
+	font-family: sans-serif;
+}
+h1{
+	color:white;
+	font-family: "Times New Roman";
+	font-size:24px;
+	text-align:right;
+	padding:14px;
+	border-radius: 20px 20px 0px 0px;
+	margin-top:0px;
+}
+#hbl1{background:green;}
+#hbl2{background:blue;}
+#hbl3{background:#666600;}
+.bloco{
+	position:relative;
+	border: 1px solid gray;
+	margin: 4px;
+	float: left;
+	width: 30%;
+	height:180px;
+	padding: 14px;
+	border-radius: 20px;
+}
+#bl1{background:#ccffcc;}
+#bl2{background:#ccffff;}
+#bl3{background:#ffffcc;}
+.bloco2{
+	border: 1px solid gray;
+	margin-left: -11px;
+	margin-top: 40px;
+	width: 98%;
+	min-height:190px;
+	padding: 14px;
+	padding-top:0px;
+	border-radius: 20px;
+}
+summary{
+	color:blue;
+	text-decoration: underline;
+	text-align:center;
+	outline:none;
+	border:0px;
+	cursor: pointer;
+}
+details summary::-webkit-details-marker { display:none; }
+li{margin:10px;}
+.imgicon{
+	width:100px;
+	position: absolute;
+	top:  2px;
+	left:10px;
+}
+#imaluno{width:70px;}
+#improf1{}
+#improf2{width:80px;}
+
+/* ------------- RESPONSIVIDADE -------------- */
+/* SMARTPHONE */
+@media only screen and (min-width:0px) {
+body{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+.bloco{
+	margin: 14px 0px 14px 0px;
+	width: 100%;
+	padding: 10px;
+	min-height:180px;
+}
+/* TABLETS */
+@media only screen and (min-width:440px) {
+body{
+	padding:0px;
+	border:0px;
+}
+.bloco{
+	margin: 4px;
+	float: left;
+	width: 30%;
+}
